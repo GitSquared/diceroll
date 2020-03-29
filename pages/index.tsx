@@ -13,7 +13,7 @@ const Home: NextPage = () => (
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				background: #82ccdd;
+				background: #8edff1;
 				color: white;
 			}
 
