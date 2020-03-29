@@ -18,6 +18,9 @@ This should work on any web browser, however:
 ### Technical
 
 The cube itself is made with CSS perspective and transforms on a bunch of `<div>`s.
+A .svg texture file contains the dots and is placed on each face and aligned with `background-position`.
+
+<img width="250" src="https://raw.githubusercontent.com/GitSquared/diceroll/master/readme_src/dice_texture.svg.png" alt="demo">
 
 The gyroscope API is used to detect when angular velocity of the device is past a certain threshold, to trigger a dice roll.
 
