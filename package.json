@@ -1,0 +1,51 @@
+{
+  "name": "diceroll",
+  "version": "1.0.0",
+  "description": "An interactive dice roller built for mobile web browsers using Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "tsc && xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/GitSquared/diceroller"
+  },
+  "author": "Gabriel Saillard <gabriel@saillard.dev> (https://gaby.dev/)",
+  "license": "WTFPL",
+  "xo": {
+    "extends": [
+      "xo-react"
+    ],
+    "semicolon": false,
+    "rules": {
+      "object-curly-spacing": [
+        1,
+        "always"
+      ],
+      "@typescript-eslint/semi": 0,
+      "unicorn/filename-case": 0,
+      "react/react-in-jsx-scope": 0,
+      "@typescript-eslint/member-delimiter-style": 0
+    }
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.10",
+    "classnames": "^2.2.6",
+    "next": "^9.3.2",
+    "next-offline": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.9.26",
+    "eslint-config-xo-react": "^0.23.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "typescript": "^3.8.3",
+    "xo": "^0.28.1"
+  }
+}

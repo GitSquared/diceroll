@@ -1,0 +1,20 @@
+{
+  "name": "Diceroll",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#82ccdd",
+  "description": "An interactive 3D dice built with web technologies",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}
