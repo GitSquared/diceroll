@@ -33,7 +33,7 @@ this.faceViews = [
 ]
 ```
 
-Using the [RelativeOrientationSensor API](https://developers.google.com/web/updates/2017/09/sensors-for-the-web#orientation-sensors), an offset is applied to those values to factor in the device's orientation for a cool 3D effect.
+Using the [RelativeOrientationSensor API](https://developers.google.com/web/updates/2017/09/sensors-for-the-web#orientation-sensors) or the [DeviceOrientationEvent API](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent) depending on browser support, an offset is applied to those values to factor in the device's orientation for a cool 3D effect.
 
 ```js
 // Calculate perspective rotation with device orientation effect

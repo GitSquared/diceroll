@@ -12,6 +12,12 @@ interface KeyDownEvent {
 	code: string
 }
 
+interface DeviceOrientationEvent extends Event {
+	alpha?: number,
+	beta?: number,
+	gamma?: number
+}
+
 type DiceFace = 1|2|3|4|5|6
 interface DiceState {
 	face: DiceFace,
@@ -70,8 +76,16 @@ class Dice extends React.Component {
 			})
 			gyroscope.start()
 		} catch (e) {
-			// Do nothing, most likely feature not supported
-			console.warn(e)
+			// Try using legacy DeviceOrientationEvent API instead
+			window.addEventListener('deviceorientation', (e: DeviceOrientationEvent) => {
+				if (!this.state.spinning) {
+					const x = e.beta / 180 ?? 0
+					const y = e.gamma / 90 ?? 0
+					this.setState({
+						accelerometer: [x, y]
+					})
+				}
+			})
 		}
 
 		document.addEventListener('keydown', (e: KeyDownEvent) => {
